@@ -97,7 +97,7 @@ function Home() {
   });
 
   useEffect(() => {
-    fetch("https://backend-my-moviz.vercel.app/")
+    fetch("https://backend-my-moviz.vercel.app/movies")
       .then((response) => response.json())
       .then((data) => {
         const changeData = data.movies.map((movie) => {
